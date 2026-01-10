@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistem Kurulum Rehberi</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0f172a;
+            color: #f1f5f9;
+        }
+
+        .glass-card {
+            background: rgba(30, 41, 59, 0.7);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 24px;
+        }
+
+        .step-number {
+            background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%);
+            width: 32px;
+            height: 32px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            font-weight: bold;
+            font-size: 0.875rem;
+        }
+
+        .action-button {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .action-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px -5px rgba(59, 130, 246, 0.5);
+        }
+
+        .app-badge {
+            background: rgba(59, 130, 246, 0.1);
+            color: #60a5fa;
+            padding: 2px 8px;
+            border-radius: 6px;
+            font-size: 0.9rem;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body class="min-h-screen flex items-center justify-center p-4 md:p-8">
+
+    <div class="max-w-2xl w-full space-y-8">
+        <!-- Başlık Bölümü -->
+        <header class="text-center space-y-4">
+            <div class="inline-block p-3 bg-blue-600/20 rounded-2xl mb-2">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10 text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" />
+                </svg>
+            </div>
+            <h1 class="text-4xl font-bold tracking-tight bg-gradient-to-r from-white to-gray-400 bg-clip-text text-transparent">
+                Sistem Kurulum Rehberi
+            </h1>
+            <p class="text-gray-400 max-w-md mx-auto">
+                Cihazınızın kişiselleştirme ve temel yapılandırma adımlarını buradan yönetebilirsiniz.
+            </p>
+        </header>
+
+        <!-- Temel Uygulamalar -->
+        <section class="glass-card p-6 md:p-8 space-y-6">
+            <div class="flex items-center space-x-3 mb-2">
+                <h2 class="text-xl font-semibold flex items-center">
+                    <span class="mr-2">🛠</span> Temel Uygulamalar
+                </h2>
+            </div>
+
+            <div class="space-y-6">
+                <!-- App 1 -->
+                <div class="flex items-start space-x-4 group">
+                    <div class="step-number mt-1 shrink-0">1</div>
+                    <div>
+                        <h3 class="text-lg font-medium text-blue-400 group-hover:text-blue-300 transition-colors">Smart Launcher</h3>
+                        <p class="text-sm text-gray-400 mt-1 italic">Açıklama: Ana kullanıcı arayüzü ve uygulama çekmecesi yönetimi.</p>
+                    </div>
+                </div>
+
+                <!-- App 2 -->
+                <div class="flex items-start space-x-4 group">
+                    <div class="step-number mt-1 shrink-0">2</div>
+                    <div>
+                        <h3 class="text-lg font-medium text-purple-400 group-hover:text-purple-300 transition-colors">Icon Pack Studio</h3>
+                        <p class="text-sm text-gray-400 mt-1 italic">Açıklama: İkon paketlerinin tasarımı ve sisteme entegrasyonu.</p>
+                    </div>
+                </div>
+
+                <!-- App 3 -->
+                <div class="flex items-start space-x-4 group">
+                    <div class="step-number mt-1 shrink-0">3</div>
+                    <div>
+                        <h3 class="text-lg font-medium text-pink-400 group-hover:text-pink-300 transition-colors">DNotch</h3>
+                        <p class="text-sm text-gray-400 mt-1 italic">Açıklama: Çentik bölgesi ve üst bar kişiselleştirmesi.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Final Adımı -->
+        <section class="glass-card p-6 md:p-8 text-center space-y-6 border-blue-500/30">
+            <div class="space-y-2">
+                <h2 class="text-xl font-semibold">🚀 Kurulumu Tamamla</h2>
+                <p class="text-gray-400 text-sm">Tüm uygulamalar yüklendikten sonra final yapılandırmayı uygulayın.</p>
+            </div>
+            
+            <a href="https://rb.gy/fxv937" target="_blank" class="action-button inline-flex items-center justify-center px-8 py-4 bg-blue-600 hover:bg-blue-500 text-white font-bold rounded-xl w-full sm:w-auto">
+                Final Adımını Başlat
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                </svg>
+            </a>
+        </section>
+
+        <!-- Notlar -->
+        <footer class="text-center px-4">
+            <div class="inline-block glass-card py-3 px-6 text-xs text-gray-400 space-y-1">
+                <p>• Görsel bütünlük ve performans odaklı yapılandırma.</p>
+                <p>• Linke tıklamadan önce <span class="text-blue-400">Smart Launcher</span> varsayılan olmalıdır.</p>
+            </div>
+        </footer>
+    </div>
+
+</body>
+</html>
+
